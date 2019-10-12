@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kenenth Johnson Assignment 2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
+
+</head>
+<body>
+<div id="header">
+ <div class="container">
+  <header>
+   <h1>Kenneth Johnson Assignment 2 - Weather Data</h1>
+  </header>
+  <div id="extrainfo">
+   <p>Search and compare weather data for Murdoch WA</p>
+   <p>Select a start and end month, the type of data to view and the format to view the data in</p>
+   <p>Please ensure that the date you selected is in the same year.</p>
+
+  </div>
+  <div id="formdiv">
+    <label for="startDate">Start Month</label>
+    <input type="month" id="startDate">
+    <label for="endDate">End Month</label>
+    <input type="month" id="endDate">
+    <h3>Data</h3>
+    <label for="both"><input type="radio" name="data" id="both" value="both" checked/> Both</label>
+    <label for="Wind"><input type="radio" name="data" id="Wind" value="Wind" /> Wind Speed</label>
+    <label for="Solar"><input type="radio" name="data" id="Solar" value="Solar" /> Solar Radiation</label>
+    
+    <h3>Ouput</h3>
+    <label for="table"><input type="radio" name="output" id="table" value="table" checked/> Table</label>
+    <label for="chart"><input type="radio" name="output" id="chart" value="chart" /> Chart</label>
+    <br />
+    <input type="button" id="search" value="Search"/>
+  
+ </div>
+ <br />
+</div>
+
+
+</div>
+<div id ="dataout">
+ <div class="container" id="results">
+ </div>
+</div>
+<footer>
+ <div class="container">
+  <img src="https://www.totalvalidator.com/images/valid_html_5.gif" />
+  <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+ </div>
+</footer>
+  
+  <script src="js/jq.js"></script>
+</body>
+</html>
